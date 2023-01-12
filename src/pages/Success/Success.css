@@ -1,0 +1,45 @@
+.success-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.success-container {
+    background: var(--yellow-color);
+    padding: 5rem;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.success-content button {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.success-content button:hover {
+    background: black;
+    color: white;
+    outline: 2px solid black;
+    outline-offset: 5px;
+}
+
+.success-content h3 {
+    font-weight: 600;
+}
+
+.success-content p {
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width: 768px) {
+    .success-wrapper {
+        margin: 0 20px;
+    }
+    .success-container{
+        padding: 2rem;
+    }
+}

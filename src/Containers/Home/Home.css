@@ -1,0 +1,126 @@
+.home-wrapper {
+    background: var(--yellow-color);
+}
+
+.home-container {
+    min-height: 80vh;
+    width: 70%;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container-content {
+    display: flex; 
+    gap: 20px;
+}
+
+.home-title {
+    width: 35%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.home-title h3 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.home-title p {
+    color: var(--secondary-color);
+}
+
+.home-title svg {
+    font-size: 1.5rem;
+    margin-right: 10px; 
+    cursor: pointer;
+}
+
+.home-image-container {
+    width: 35%;
+}
+
+.home-image {
+    display: flex; 
+    justify-content: center;
+
+}
+
+.home-image img {
+    width: 80%;
+    object-fit: cover;
+    border-radius: 100px 100px 0 0;
+}
+
+.home-desc {
+    width: 30%;
+    display: flex; 
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.home-desc h4 {
+    font-weight: 600; 
+}
+
+.home-desc button {
+    width: fit-content;
+    background: none;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+}
+
+.home-desc button:hover {
+    background: black;
+    color: white;
+    box-shadow: 5px 5px 5px gray;
+}
+
+@media screen and (max-width: 1200px) {
+    .home-container{
+        width: 90%;
+        font-size: 14px;
+    }
+    .home-container-content{
+        gap:0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-container-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .home-title {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .home-image-container{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-image {
+        width: 70%;
+    }
+
+    .home-desc {
+        width: 90%;
+        margin-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

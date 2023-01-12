@@ -1,0 +1,41 @@
+.catalog-wrapper {
+    background: var(--gray-color);
+}
+
+.catalog-container {
+    width: 72%;
+    margin: 0 auto;
+    padding: 4rem;
+    text-align: center;
+}
+
+.catalog-container h2 {
+    font-weight: 600;;
+}
+
+
+
+.catalog-content {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    gap: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .catalog-container{
+        width: 100%;    
+    }
+    .catalog-content {
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .catalog-container{
+        width: 100%;
+    }
+}
+

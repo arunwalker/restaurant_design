@@ -1,0 +1,95 @@
+.navbar-nav {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    outline: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100vw;
+}
+
+.navbar-toggler {
+    position: fixed;
+    right: 5px;
+}
+
+.navbar-collapse {
+    justify-content: center;
+    margin-right: 150px;
+}
+
+.navbar-brand {
+    z-index: 99;
+}
+
+.navbar-image {
+    width: 40px; 
+}
+
+.nav-link:hover {
+    color: black; 
+}
+
+.nav-link:hover::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: black;
+}
+
+.navbar-toggle-menu {
+    background-color: var(--yellow-color);
+    width: 55%; 
+    height: 100vh; 
+    position: fixed; 
+    top: 0; 
+    right: 0;   
+
+    animation: move 1000ms forwards;
+}
+@keyframes move {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.navbar-toggle-close {
+    margin: 10px;
+}
+
+.navbar-toggle-menu-items ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbar-toggle-menu-items ul li {
+    margin-top: 10px; 
+}
+
+.navbar-toggle-menu-items ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: gray;
+}
+
+.navbar-toggle-menu-items ul li a:hover {
+    color: black;
+    border-bottom: 1px solid; 
+}
+
+.navbar-toggle-menu-items-social {
+    display: flex; 
+    flex-direction: column;
+    position: absolute;
+    bottom: 0; 
+    right: 0;
+    margin: 10px; 
+    gap: 10px; 
+
+}
+
+.navbar-toggle-menu-items-social svg{
+    font-size: 2rem; 
+}

@@ -1,0 +1,23 @@
+.item-container {
+    margin-top: 2rem;
+    display: flex; 
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.1);
+}
+
+.item-image img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.item-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+}
